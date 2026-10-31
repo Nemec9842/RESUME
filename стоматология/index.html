@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стоматология «Белый Клык» | Лечение зубов без боли в Москве</title>
+  <meta name="description" content="Премиальная стоматологическая клиника «Белый Клык». Лечение, имплантация, ортодонтия без боли. Опыт врачей 10+ лет.">
+  
+  <meta property="og:title" content="Стоматология «Белый Клык»">
+  <meta property="og:description" content="Современное оборудование, гарантия на работы, честные цены.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/1.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Стоматологическая клиника «Белый Клык»",
+    "telephone": "+7 (999) 123-45-67",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Ленина, д. 10",
+      "addressLocality": "Москва",
+      "postalCode": "123456",
+      "addressCountry": "RU"
+    },
+    "openingHours": ["Mo-Fr 09:00-21:00", "Sa-Su 10:00-18:00"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="logo" aria-label="На главную">
+        <div class="logo-icon">БК</div>
+        <span class="logo-text">Белый Клык</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#prices">Цены</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+79991234567" class="header-phone">+7 (999) 123-45-67</a>
+        <a href="#appointment" class="btn btn-primary">Записаться</a>
+      </div>
+
+      <button class="burger-btn" id="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <button class="close-menu-btn" id="close-menu" aria-label="Закрыть меню">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <a href="#services" class="mobile-link">Услуги</a>
+      <a href="#doctors" class="mobile-link">Врачи</a>
+      <a href="#prices" class="mobile-link">Цены</a>
+      <a href="#reviews" class="mobile-link">Отзывы</a>
+      <a href="#contacts" class="mobile-link">Контакты</a>
+      <a href="tel:+79991234567" class="mobile-link">+7 (999) 123-45-67</a>
+      <a href="#appointment" class="btn btn-primary btn-full mobile-link">Записаться на приём</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content fade-in-up">
+          <h1>Здоровые зубы — <span>без боли и страха</span></h1>
+          <p class="hero-subtitle">
+            Современная стоматология с человеческим лицом. Используем микроскопы и цифровое планирование, чтобы сохранить ваши зубы на всю жизнь.
+          </p>
+          <div class="hero-buttons">
+            <a href="#appointment" class="btn btn-primary">Записаться на приём</a>
+            <a href="tel:+79991234567" class="btn btn-secondary">Позвонить</a>
+          </div>
+          <div class="hero-badges">
+            <div class="hero-badge">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>Лицензия № ЛО-77-01-012345</span>
+            </div>
+            <div class="hero-badge">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>12 лет опыта</span>
+            </div>
+            <div class="hero-badge">
+              <svg fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span>15 000+ пациентов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper fade-in-up delay-200">
+          <img src="images/1.jpg" 
+               alt="Современный кабинет стоматологии Белый Клык" 
+               class="hero-image"
+               loading="eager" width="600" height="500">
+          <div class="hero-badge-card">
+            <div class="hero-badge-icon">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div class="hero-badge-text">
+              <strong>Безопасность</strong>
+              <span>Многоступенчатая стерилизация</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="advantages-grid">
+          <div class="advantage-card fade-in-up">
+            <div class="advantage-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3>Безболезненное лечение</h3>
+            <p>Компьютерная анестезия и деликатный подход к каждому пациенту.</p>
+          </div>
+          <div class="advantage-card fade-in-up delay-100">
+            <div class="advantage-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+            </div>
+            <h3>Современное оборудование</h3>
+            <p>Цифровые рентген-аппараты, интраоральные сканеры и микроскопы.</p>
+          </div>
+          <div class="advantage-card fade-in-up delay-200">
+            <div class="advantage-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <h3>Врачи с опытом 10+ лет</h3>
+            <p>Регулярное повышение квалификации. Только доказательная медицина.</p>
+          </div>
+          <div class="advantage-card fade-in-up delay-300">
+            <div class="advantage-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3>Гарантия на работы</h3>
+            <p>Юридически закреплённая гарантия на все виды лечения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section id="services" class="section section-gray">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Наши услуги</h2>
+          <p>Комплексный подход к здоровью полости рта: от профилактики до сложной имплантации.</p>
+        </div>
+        
+        <div class="services-grid">
+          <article class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3>Терапия</h3>
+            <p>Лечение кариеса и пульпита под микроскопом с использованием коффердама.</p>
+            <div class="service-footer">
+              <span class="service-price">от 3 500 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="service-card fade-in-up delay-100">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h3>Отбеливание</h3>
+            <p>Безопасное осветление эмали на 6-8 тонов системой Zoom 4.</p>
+            <div class="service-footer">
+              <span class="service-price">от 15 000 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="service-card fade-in-up delay-200">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0 0L12 12m0 0l7.5 7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3>Имплантация</h3>
+            <p>Восстановление зубов имплантами Straumann или Osstem.</p>
+            <div class="service-footer">
+              <span class="service-price">от 25 000 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="service-card fade-in-up">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <h3>Ортодонтия</h3>
+            <p>Исправление прикуса брекетами и элайнерами для детей и взрослых.</p>
+            <div class="service-footer">
+              <span class="service-price">от 150 000 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="service-card fade-in-up delay-100">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+            </div>
+            <h3>Детская стоматология</h3>
+            <p>Адаптационные визиты, лечение без слёз, герметизация фиссур.</p>
+            <div class="service-footer">
+              <span class="service-price">от 2 000 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+
+          <article class="service-card fade-in-up delay-200">
+            <div class="service-icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h3>Хирургия</h3>
+            <p>Атравматичное удаление зубов любой сложности, костная пластика.</p>
+            <div class="service-footer">
+              <span class="service-price">от 4 500 ₽</span>
+              <a href="#appointment" class="service-link">Подробнее →</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-block fade-in-up">
+          <h3>Не откладывайте здоровье зубов на потом</h3>
+          <p>Бесплатная консультация и составление плана лечения при записи через сайт.</p>
+          <a href="#appointment" class="btn btn-accent">Записаться на бесплатную консультацию</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ВРАЧИ -->
+    <section id="doctors" class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Наши специалисты</h2>
+          <p>Врачи, которым доверяют своё здоровье целые семьи.</p>
+        </div>
+
+        <div class="doctors-grid">
+          <div class="doctor-card fade-in-up">
+            <div class="doctor-photo-wrapper">
+              <img src="images/2.jpg" alt="Иванов Петр Сергеевич, стоматолог-терапевт" class="doctor-photo" loading="lazy" width="400" height="400">
+            </div>
+            <div class="doctor-info">
+              <h3 class="doctor-name">Иванов Петр Сергеевич</h3>
+              <p class="doctor-specialty">Стоматолог-терапевт, эндодонтист</p>
+              <p class="doctor-description">Стаж работы: 14 лет. Специализируется на лечении каналов под микроскопом.</p>
+              <a href="#appointment" class="btn btn-outline btn-full">Записаться к врачу</a>
+            </div>
+          </div>
+
+          <div class="doctor-card fade-in-up delay-100">
+            <div class="doctor-photo-wrapper">
+              <img src="images/3.jpg" alt="Смирнова Анна Владимировна, ортодонт" class="doctor-photo" loading="lazy" width="400" height="400">
+            </div>
+            <div class="doctor-info">
+              <h3 class="doctor-name">Смирнова Анна Владимировна</h3>
+              <p class="doctor-specialty">Ортодонт</p>
+              <p class="doctor-description">Стаж работы: 9 лет. Эксперт по невидимым элайнерам и лигатурным брекетам.</p>
+              <a href="#appointment" class="btn btn-outline btn-full">Записаться к врачу</a>
+            </div>
+          </div>
+
+          <div class="doctor-card fade-in-up delay-200">
+            <div class="doctor-photo-wrapper">
+              <img src="images/4.jpg" alt="Козлов Дмитрий Иванович, хирург-имплантолог" class="doctor-photo" loading="lazy" width="400" height="400">
+            </div>
+            <div class="doctor-info">
+              <h3 class="doctor-name">Козлов Дмитрий Иванович</h3>
+              <p class="doctor-specialty">Хирург-имплантолог</p>
+              <p class="doctor-description">Стаж работы: 18 лет. Провёл более 5000 успешных операций по имплантации.</p>
+              <a href="#appointment" class="btn btn-outline btn-full">Записаться к врачу</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК ПРОХОДИТ ПРИЁМ -->
+    <section class="section section-gray">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Как проходит приём</h2>
+          <p>Прозрачный и комфортный процесс от звонка до результата.</p>
+        </div>
+
+        <div class="timeline fade-in-up">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <h3>1. Консультация</h3>
+            <p>Вы приходите в клинику, мы знакомимся, обсуждаем ваши жалобы и пожелания. Проводим первичный осмотр.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <h3>2. Диагностика</h3>
+            <p>Делаем цифровой снимок (КТ или прицельный рентген) для точной оценки состояния корней и костной ткани.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <h3>3. План лечения</h3>
+            <p>Врач составляет подробный план с несколькими вариантами решения задачи и фиксированной сметой. Без скрытых доплат.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <h3>4. Лечение</h3>
+            <p>Проводим все манипуляции с максимальным комфортом. После выдаём рекомендации и назначаем дату контрольного осмотра.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="prices" class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Стоимость услуг</h2>
+          <p>Актуально на октябрь 2026 г. Окончательная стоимость определяется после консультации.</p>
+          <a href="#" class="btn btn-outline" style="margin-top: 24px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="margin-right: 8px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Скачать полный прайс-лист (PDF)
+          </a>
+        </div>
+
+        <div class="price-list fade-in-up">
+          <details class="price-item">
+            <summary class="price-summary">
+              <span>Консультация и диагностика</span>
+              <svg class="price-arrow" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="price-content">
+              <div class="price-row"><span>Первичная консультация</span><span>Бесплатно*</span></div>
+              <div class="price-row"><span>Прицельный рентген-снимок</span><span>500 ₽</span></div>
+              <div class="price-row"><span>Компьютерная томография (КТ)</span><span>3 500 ₽</span></div>
+              <p class="price-note">*При условии последующего лечения в клинике.</p>
+            </div>
+          </details>
+
+          <details class="price-item">
+            <summary class="price-summary">
+              <span>Терапия и реставрация</span>
+              <svg class="price-arrow" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="price-content">
+              <div class="price-row"><span>Лечение кариеса (световая пломба)</span><span>от 3 500 ₽</span></div>
+              <div class="price-row"><span>Лечение пульпита (1 канал)</span><span>от 7 000 ₽</span></div>
+              <div class="price-row"><span>Художественная реставрация</span><span>от 5 500 ₽</span></div>
+            </div>
+          </details>
+
+          <details class="price-item">
+            <summary class="price-summary">
+              <span>Имплантация</span>
+              <svg class="price-arrow" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <div class="price-content">
+              <div class="price-row"><span>Имплант Osstem под ключ</span><span>от 25 000 ₽</span></div>
+              <div class="price-row"><span>Имплант Straumann под ключ</span><span>от 55 000 ₽</span></div>
+              <div class="price-row"><span>Синус-лифтинг (закрытый)</span><span>от 15 000 ₽</span></div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="reviews" class="section section-gray">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Отзывы пациентов</h2>
+        </div>
+
+        <div class="reviews-slider fade-in-up" id="reviews-container">
+          <div class="reviews-track" id="reviews-track">
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Очень боялась стоматологов с детства, но здесь такой бережный подход, что я даже уснула в кресле! Спасибо Петру Сергеевичу."</p>
+              <p class="review-author">Елена В.</p>
+              <p class="review-date">12 октября 2026</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Ставил имплант у Козлова Д.И. Всё прошло быстро, отёк был минимальный. Цены полностью соответствовали смете."</p>
+              <p class="review-author">Алексей М.</p>
+              <p class="review-date">28 сентября 2026</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Водим сюда всю семью, включая детей. Детский стоматолог нашла подход к моему сыну за 5 минут."</p>
+              <p class="review-author">Марина К.</p>
+              <p class="review-date">15 сентября 2026</p>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">"Отбеливание Zoom 4 превзошло ожидания. Зубы стали светлее на 8 тонов, чувствительности почти не было."</p>
+              <p class="review-author">Дмитрий С.</p>
+              <p class="review-date">01 сентября 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА ЗАПИСИ -->
+    <section id="appointment" class="section section-light">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Запись на приём</h2>
+          <p>Оставьте заявку, и мы перезвоним в течение 15 минут для подтверждения времени.</p>
+        </div>
+
+        <div class="form-wrapper fade-in-up">
+          <form id="booking-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Ваше имя *</label>
+                <input type="text" id="name" name="name" required minlength="2" class="form-input" placeholder="Иван Иванов">
+                <p class="form-error" id="name-error">Пожалуйста, введите корректное имя</p>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Телефон *</label>
+                <input type="tel" id="phone" name="phone" required class="form-input" placeholder="+7 (___) ___-__-__">
+                <p class="form-error" id="phone-error">Введите полный номер телефона</p>
+              </div>
+              <div class="form-group full">
+                <label for="service" class="form-label">Интересующая услуга</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="">Выберите услугу</option>
+                  <option value="therapy">Терапия (лечение кариеса)</option>
+                  <option value="implant">Имплантация</option>
+                  <option value="ortho">Ортодонтия</option>
+                  <option value="whitening">Отбеливание</option>
+                  <option value="child">Детский приём</option>
+                  <option value="other">Другое</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="comment" class="form-label">Комментарий</label>
+                <textarea id="comment" name="comment" rows="3" class="form-textarea" placeholder="Опишите вашу ситуацию или удобное время для звонка"></textarea>
+              </div>
+            </div>
+
+            <div class="form-checkbox-group">
+              <input type="checkbox" id="consent" name="consent" required class="form-checkbox">
+              <label for="consent" class="form-checkbox-label">
+                Я согласен на <a href="#">обработку персональных данных</a> *
+              </label>
+            </div>
+            <p class="form-error" id="consent-error">Необходимо дать согласие</p>
+
+            <button type="submit" class="btn btn-primary btn-full">Записаться на приём</button>
+
+            <div class="success-message" id="success-message">
+              Спасибо! Мы получили вашу заявку и перезвоним в течение 15 минут.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="section section-gray">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <h2>Контакты</h2>
+        </div>
+
+        <div class="contacts-grid">
+          <div class="fade-in-up">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="contact-content">
+                <h3>Адрес</h3>
+                <p>г. Москва, ул. Ленина, д. 10, стр. 2<br>(м. Тверская, 5 минут пешком)</p>
+                <a href="https://yandex.ru/maps" target="_blank" rel="noopener" style="color: var(--color-primary); font-weight: 600; font-size: 14px; margin-top: 8px; display: inline-block;">Построить маршрут →</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div class="contact-content">
+                <h3>Телефон</h3>
+                <a href="tel:+79991234567" class="contact-phone">+7 (999) 123-45-67</a>
+                <p style="margin-top: 4px;">Ежедневно с 09:00 до 21:00</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              </div>
+              <div class="contact-content">
+                <h3>Мессенджеры</h3>
+                <div class="messengers">
+                  <a href="https://wa.me/79991234567" class="messenger-btn whatsapp">WhatsApp</a>
+                  <a href="https://t.me/whitefang_clinic" class="messenger-btn telegram">Telegram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper fade-in-up delay-100">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0&amp;source=constructor" title="Карта расположения клиники Белый Клык" loading="lazy"></iframe>
+            <div class="map-fallback" id="map-fallback">Здесь будет интерактивная карта</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">БК</div>
+            <span class="logo-text">Белый Клык</span>
+          </a>
+          <p>Современная стоматология для всей семьи. Забота о вашем здоровье с 2014 года.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Разделы</h4>
+          <ul>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#doctors">Врачи</a></li>
+            <li><a href="#prices">Цены</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Пациентам</h4>
+          <ul>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Правовая информация</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Контакты</h4>
+          <p>+7 (999) 123-45-67</p>
+          <p>г. Москва, ул. Ленина, д. 10</p>
+          <p>info@whitefang.ru</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2014–2026 ООО «Белый Клык». Все права защищены.</p>
+        <p>ИНН 7701234567 | ОГРН 1157746123456 | Лицензия № ЛО-77-01-012345</p>
+        <p>Имеются противопоказания. Необходима консультация специалиста.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Плавающая кнопка звонка -->
+  <a href="tel:+79991234567" class="floating-call" aria-label="Позвонить в клинику">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
